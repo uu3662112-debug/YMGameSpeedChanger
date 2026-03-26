@@ -1,0 +1,16 @@
+allprojects {
+    repositories {
+        // 阿里云镜像
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+
+        // 华为镜像(备用)
+        maven { url 'https://repo.huaweicloud.com/repository/maven/' }
+
+        // Google官方(如果镜像失效)
+        google()
+        mavenCentral()
+    }
+}
